@@ -1,0 +1,29 @@
+<template name="ticketEdit">
+  {{#with ticket}}
+    <form class="main">
+
+      <div class="control-group">
+          <label class="control-label" for="status">Status</label>
+          <div class="controls">
+                          <select name="status">
+                              <option value="NEW">NEW</option>
+                              <option value="IN PROGRESS">IN PROGRESS</option>
+                              <option value="DONE">DONE</option>
+                          </select>
+          </div>
+      </div>
+
+      <div class="control-group">
+          <div class="controls">
+              <input type="submit" value="Submit" class="btn btn-primary submit"/>
+          </div>
+      </div>
+      <hr/>
+      <div class="control-group">
+          <div class="controls">
+              <a class="btn btn-danger delete" href="#">Delete ticket</a>
+          </div>
+      </div>
+    </form>
+  {{/with}}
+</template>

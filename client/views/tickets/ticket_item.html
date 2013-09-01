@@ -1,0 +1,21 @@
+<template name="ticketItem">
+  <div class="post">
+    <div class="post-content">
+<h3>
+
+
+<div class="listPage">
+Summary: <p class="pmargin"> {{summary}}</p>
+Priority: <p class="pmargin">{{priority}}</p>
+Reported by <p class="pmargin"> {{author}}</p>
+Status: <p class="pmargin">{{status}}</p>
+</div>
+
+</h3>
+      <p>
+        {{#if ownTicket}}<a href="{{ticketEditPath this}}">Edit</a>{{/if}}
+      </p>
+    </div>
+<a href="{{ticketPagePath this}}" class="discuss btn">Show</a>
+  </div>
+</template>
